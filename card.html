@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="cart-left">
+            <div class="cart-items-top">
+                <h2>Себет: <span id="cart-size">6</span></h2>
+                <button id="clear-cart">Себетті өшіру</button>
+            </div>
+            <div id="display-cart">
+                <h2>Тапсырыс</h2>
+                <button><ion-icon name="chevron-up-outline"></ion-icon></button>
+            </div>
+            <div class="cart-items">
+                <!-- <div class="cart-item">
+                    <div class="cart-item-left">
+                        <img src="/image/Rectangle 32.png" alt="">
+                        <div class="cart-item-left-actions">
+                            <a href="http://">Бананы кг</a>
+                            <div class="cart-item-amount">
+                                <button><ion-icon name="trash-outline"></ion-icon></button>
+                                <p>0,9 кг</p>
+                                <button><ion-icon name="add-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-right">
+                        <button><ion-icon name="close-outline"></ion-icon></button>
+                        <p>1125 ₸</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="cart-right">
+            <div class="purchase-details">
+                <h2>Сіздің тапсырыс</h2>
+            <table>
+                <tr>
+                    <td>Өнім</td>
+                    <td id="products-price">8 575 ₸</td>
+                </tr>
+                <tr>
+                    <td>Жеткізу құны</td>
+                    <td id="delivery-price">0 ₸</td>
+                </tr>
+                <tr>
+                    <td><b>Барлық баға</b></td>
+                    <td><b id="total-price">8 575 ₸</b></td>
+                </tr>
+            </table>
+            <button>Төлеу</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/js/card.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
