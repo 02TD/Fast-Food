@@ -9,8 +9,10 @@
 // const cartsContainer = document.querySelector(".cart-items");
 // cartsContainer.appendChild(createCartItem(obj));
 
+
+
 function createCartItem(cartItemData) {
-    const { imgUrl, title, desc, price, quantity } = cartItemData;
+    const { img, title, desc, price, quantity } = cartItemData;
   
     const cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");
@@ -18,9 +20,9 @@ function createCartItem(cartItemData) {
     const cartItemLeft = document.createElement("div");
     cartItemLeft.classList.add("cart-item-left");
   
-    const img = document.createElement("img");
-    img.src = imgUrl;
-    img.alt = "";
+    const imgg = document.createElement("img");
+    imgg.src = "../" + img;
+    imgg.alt = "";
   
     const cartItemLeftActions = document.createElement("div");
     cartItemLeftActions.classList.add("cart-item-left-actions");
@@ -53,7 +55,7 @@ function createCartItem(cartItemData) {
     cartItemLeftActions.appendChild(itemNameLink);
     cartItemLeftActions.appendChild(cartItemAmount);
   
-    cartItemLeft.appendChild(img);
+    cartItemLeft.appendChild(imgg);
     cartItemLeft.appendChild(cartItemLeftActions);
   
     const cartItemRight = document.createElement("div");
